@@ -4,7 +4,7 @@ public class NumberNames {
 
 	public static void main(String[] args) {
 		// Task: Input a number [0;999] and print its name
-		System.out.println(name(256));
+		System.out.println(name(897));
 	}
 
 	public static String digit(int digit) {
@@ -89,6 +89,9 @@ public class NumberNames {
 		int special = number % 100;
 		String name = "";
 
+		if (number == 0) {
+			return "zero";
+		}
 		if (hundreds > 0) {
 			name += digit(hundreds) + " hundred ";
 		}
